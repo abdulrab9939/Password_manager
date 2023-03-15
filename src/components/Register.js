@@ -95,7 +95,7 @@ export default function Register( {
     return (
         <div className='register-main'>
            <ToastContainer/>
-            <h1>Registerhghnsfasdf</h1>
+            <h1>Registerhghnsfasdffas</h1>
             {successMsg&&<>
             <div className='success-msg'>
                 {successMsg}
