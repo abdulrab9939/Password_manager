@@ -1,38 +1,123 @@
-.App {
+*{
+  font-family: Poppins;
+}
+
+.register-main{
+  display: flex;
+  justify-content: center;
   text-align: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-main{
+  position: relative;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: -1px 0px 5px 3px rgb(189,189,189,1);
+  
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputs-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%,-35%)
+}
+
+.input-fields{
+  margin: 5px;
+  height: 40px;
+}
+
+.input-btn{
+  margin: 5px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  background-color: #009688;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.home-main{
+  text-align: center;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.add-password{
+  background-color: #009688;
+
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #bdbdbd;
+  color: white;
+  cursor: pointer;
+  
 }
+
+.password-data{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: #e2e2e2;
+  padding: 0 15px;
+
+}
+
+.password-main{
+  position: relative;
+  top: 60px;
+  padding: 0 20px;
+}
+
+.password-display{
+  font-size: 40px;
+
+
+}
+
+.eye-icon{
+  margin-top: 25px;
+  margin-right: 20px;
+  color: #323232;
+  cursor: pointer;
+}
+.modal-main{
+  display: flex ;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.close-icon{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.logout-btn{
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  
+}
+
+body{
+  font-family: 'roboto',sans-serif;
+}
+
