@@ -80,10 +80,7 @@ const Navbar = () => {
               <Button sx={{margin:1,color:'white'}} LinkComponent={Link} to='/home'>
                   Home
               </Button>
-              <Button sx={{margin:1,color:'white'}} LinkComponent={Link} to='/passreset'>
-                  Passreset
-              </Button>
-           
+              
             
              
               </Box>
