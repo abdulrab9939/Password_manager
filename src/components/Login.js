@@ -52,7 +52,7 @@ export default function Login() {
   return (
     <div className='register-main'>
       <ToastContainer/>
-      <h1>Login</h1>
+      <h1 style={{paddingBottom:"10px"}}>Login</h1>
 
       <div className='card-main'>
         <div className='inputs-container'>

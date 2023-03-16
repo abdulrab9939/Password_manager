@@ -10,7 +10,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 300,
   bgcolor: 'background.paper',
   boxShadow: 24,
   p: 4,
@@ -63,7 +63,7 @@ export default function PasswordModal({
          {showNewPassword ? (
 
            <Typography id="modal-modal-title" variant="h6" component="h2">
-        The  Password  for {showPassword.name} is {showPassword.password}
+         Your  Password {showPassword.password} is {showPassword.name}
           </Typography>
            
          ):(

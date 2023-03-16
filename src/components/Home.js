@@ -9,6 +9,7 @@ import {getAuth,signOut,onAuthStateChanged} from 'firebase/auth'
 import {useNavigate}  from 'react-router-dom'
 import {ToastContainer,toast} from 'react-toastify';
 
+
 export default function Home( {
     database
 
@@ -77,6 +78,7 @@ export default function Home( {
         })
         setPasswordOpen(true)
      }
+     console.log(passwordArray);
 
     
     useEffect(()=>{
@@ -91,6 +93,7 @@ export default function Home( {
         })
     },[]);
 
+
   
 
 
@@ -101,7 +104,10 @@ export default function Home( {
         
         <div className='home-main'>
            <ToastContainer/>
-            <h1>Welcome </h1>
+           {
+             <marquee  > <h3 style={{color:"green"}} >Welcome To Password Manager App Developed By Abdul Rab</h3></marquee>
+           }
+            
             {/* <div className='logout-btn'>
             <button 
                     className='input-btn'
@@ -137,12 +143,12 @@ export default function Home( {
                 {password.passwordArray.map((password)=>{
                     return (
                         <div className='password-data'>
-                           
-                         <p className='password-display'>{password.name}</p>
+                        <p className='password-display'>{password.name}</p>
+
                         <AiFillEye 
                         className='eye-icon'
                         onClick={()=>openPasswordModal(password.password)}
-                    
+
                         size={30
                         }/>
                             {/* <p className='password-display'>{password.password}</p> */}

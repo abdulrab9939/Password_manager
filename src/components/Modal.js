@@ -9,7 +9,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 300,
   bgcolor: 'background.paper',
   boxShadow: 24,
   p: 4,
@@ -37,7 +37,7 @@ export default function BasicModal({
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Add a Password
+            Add Password
           </Typography>
           <input
             placeholder='Enter your page name'
@@ -59,7 +59,7 @@ export default function BasicModal({
                     onClick={addPassword}
 
                     >
-                         Add a Password
+                         Add Password
                     </button>
           
           

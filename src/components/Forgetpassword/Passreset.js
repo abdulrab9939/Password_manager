@@ -53,6 +53,7 @@ export default function ForgetPassword() {
 
       <div className='card-main'>
         <div className='inputs-container'>
+          <label>Enter Your Email </label>
           <input
             placeholder='Enter your Email'
             className='input-fields'
